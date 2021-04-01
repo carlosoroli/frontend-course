@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Selector de tipo de etiqueta */
+    ul{
+        list-style: none;
+    }
+
+    /* Pseudo-clases */
+    li:last-child{
+        color:red
+    }
+    li:first-child{
+        color:blue;
+    }
+    li:nth-child(even){
+        color: goldenrod;        
+    }
+
+    /* Pseudo elementos */
+    li::first-letter{
+        text-decoration:underline;
+        color: hotpink;
+    }
+</style>
+<body>
+    <ul>
+        <li>Manzana</li>
+        <li>Fresa</li>
+        <li>Mango</li>
+        <li>Sandia</li>
+        <li>Piña</li>
+    </ul>
+</body>
+</html>
