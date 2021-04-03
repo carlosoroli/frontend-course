@@ -1,14 +1,14 @@
 *{
-    /* box-sizing: border-box;
-    margin: 0;
-    padding: 0; */
+    /* box-sizing: border-box; */
+    /* margin: 0; */
+    /* padding: 0; */
 }
 html{
     font-size: 62.5%;
     font-family: 'Muli',sans-serif;
 }
 body{
-    background-color: #AB88FF;
+    background-color: #8F57FD;
 }
 .header{
     width: 100%;
@@ -60,4 +60,64 @@ body{
 }
 .header__menu li a:hover{
     text-decoration: underline;
+}
+
+/* Main section -------------------------------------------------- */
+
+.main{
+    height: 300px;
+}
+.main__title{
+    color: white;
+    font-size: 2.5rem;
+}
+.main__input{
+    width: 70%;
+    height: 50px;
+    border: 2px solid white;
+    padding: 0px 20px;
+    border-radius: 25px;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+}
+::placeholder{
+    color: white;
+    font-size: 1.6rem;
+}
+
+/* Carrusel section ------------------------------------------------- */
+
+.carrusel{
+    width: 100%;
+    padding: 30px;
+    overflow: scroll;
+    position: relative;
+}
+.carrusel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px; 
+}
+.carrusel__item{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: hotpink;
+    margin-right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+}
+.carrusel__item:hover ~ .carrusel__item {
+    transform: translate3d(100px,0,0);
+}
+.carrusel__container:hover .carrusel__item{
+    opacity: 0.3;
+    
+}
+.carrusel__container:hover .carrusel__item:hover{
+    transform: scale(1.5);
+    opacity: 1;
 }
