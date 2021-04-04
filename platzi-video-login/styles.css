@@ -3,7 +3,7 @@ html{
     font-family: 'Muli',sans-serif;
 }
 body{
-    background-color: #8F57FD;
+    background-color: #21C08B;
 }
 .header{
     width: 100%;
@@ -16,43 +16,4 @@ body{
     width: 200px;
     margin-top: 10px;
     margin-left: 10px;
-}
-.header__menu{
-    margin-right: 30px;
-}
-.header__menu--profile{
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.header__menu--profile p{
-    color: white;
-    margin: 0px;
-}
-.header__menu--profile img{
-    width: 40px;
-    margin-right: 8px;
-}
-.header__menu ul{
-    display: none;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    width: 100px;
-    text-align: right;
-    margin: 0 0 0 -14px;
-}
-.header__menu:hover ul, ul:hover{
-    display: block;
-}
-.header__menu li{
-    margin: 10px 0px;
-}
-.header__menu li a{
-    color: white;
-    text-decoration: none;
-}
-.header__menu li a:hover{
-    text-decoration: underline;
 }
