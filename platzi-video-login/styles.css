@@ -4,6 +4,7 @@ html{
 }
 body{
     background-color: #21C08B;
+    margin: 0;
 }
 .header{
     width: 100%;
@@ -16,4 +17,51 @@ body{
     width: 200px;
     margin-top: 10px;
     margin-left: 10px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(#21c08B, #ab88ff);
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.login__container{
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    width: 300px;
+    padding: 60px 68px 40px;
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label,a{
+    font-size: 1.4rem;
+}
+.login__container--remember-me{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.login__container--remember-me a{
+    color: white;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover{
+    text-decoration: underline;
+}
+.login__container--socials > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
