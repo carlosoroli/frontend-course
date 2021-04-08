@@ -36,6 +36,7 @@ body{
     padding: 0px 50px;
     border-radius: 40px;
     background: rgba(255,255,255, 0.1);
+    box-shadow: 8px 10px 30px -7px rgba(0,0,0,0.49);
 }
 .register-container h2{
     color: white;
